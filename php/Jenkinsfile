@@ -1,5 +1,5 @@
 pipeline {
-  agent any
+  agent { docker { image 'php:8.1.11-alpine' } }
   stages {
     stage('verify version') {
       steps {
