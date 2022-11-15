@@ -1,5 +1,9 @@
 pipeline {
-  agent { docker { image 'php:7.4-alpine' } }
+  agent {
+    docker {
+      image 'php:7.4-alpine'
+    }
+  }
   stages {
     stage('verify version') {
       steps {
